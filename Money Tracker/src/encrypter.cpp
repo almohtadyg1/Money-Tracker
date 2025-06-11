@@ -1,4 +1,3 @@
-#pragma once
 #define NOMINMAX
 #include <windows.h>
 #include <bcrypt.h>

@@ -110,7 +110,7 @@ int main() {
         std::map<std::string, std::string> borrowersMap;
         std::vector<std::string> orderVector;
 
-        stringToMap(decrypted, dataMap, borrowersMap, orderVector);
+        stringToData(decrypted, dataMap, borrowersMap, orderVector);
 
         std::string choice, tempString, tempString1, tempString2;
         do {
@@ -234,7 +234,7 @@ int main() {
                 std::cout << "Data Saved!\n";
             }
             else if (choice == "5") {
-                std::string dataString = mapToString(dataMap, borrowersMap, orderVector);
+                std::string dataString = dataToString(dataMap, borrowersMap, orderVector);
                 // padding data so it's a multiple of 16 with '*'
                 int remainder = dataString.length() % 16;
                 if (remainder != 0) {
@@ -293,7 +293,7 @@ int main() {
         std::map<std::string, std::string> borrowersMap;
         std::vector<std::string> orderVector = { "Total Money", "Last Transaction", "Short Note" };
 
-        std::string dataString = mapToString(dataMap, borrowersMap, orderVector);
+        std::string dataString = dataToString(dataMap, borrowersMap, orderVector);
         // padding data so it's a multiple of 16 with '*'
         int remainder = dataString.length() % 16;
         if (remainder != 0) {

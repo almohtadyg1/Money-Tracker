@@ -1,7 +1,8 @@
-#pragma once
 #include <string>
 #include <sstream>
 #include <fstream>
+#include <map>
+#include <vector>
 
 std::string loadFile(const std::string& filename, bool& err) {
     std::ifstream file(filename, std::ios::binary);
@@ -43,7 +44,7 @@ bool saveToFile(const std::string& dataString, const std::string& filename) {
 
 
 
-std::string mapToString(const auto& dataMap, const auto& borrowersMap, const auto& orderVector) {
+std::string dataToString(const std::map<std::string, std::string>& dataMap, const std::map<std::string, std::string>& borrowersMap, const std::vector<std::string>& orderVector) {
 
     std::string result;
     for (const auto& pair : dataMap) {
@@ -74,7 +75,7 @@ std::string mapToString(const auto& dataMap, const auto& borrowersMap, const aut
     return result;
 }
 
-void stringToMap(const std::string_view data, auto& outDataMap, auto& outBorrowersMap, auto& outOrderVector) {
+void stringToData(const std::string_view data, std::map<std::string, std::string>& outDataMap, std::map<std::string, std::string>& outBorrowersMap, std::vector<std::string>& outOrderVector) {
 
     size_t first = data.find('|');
     size_t second = data.find('|', first + 1);

@@ -18,12 +18,18 @@
     <ClCompile Include="src\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\encrypter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\savingFunctions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\encrypter.h">
+    <ClInclude Include="include\encrypter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\savingFunctions.h">
+    <ClInclude Include="include\savingFunctions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
