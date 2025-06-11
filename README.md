@@ -58,7 +58,7 @@ Choose:
 
 2. Compile the project:
    ```bash
-   g++ -o money_tracker main.cpp
+   g++ -o money_tracker main.cpp encrypter.cpp savingFunctions.cpp
    ```
 
 3. Run it:
