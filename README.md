@@ -36,18 +36,15 @@ Choose:
 - **Make A Transaction**: Add income/expense entries  
 - **Write A Short Note**: Quick notes tied to sessions  
 - **Manage Borrowers/Lenders**: Add or update people you owe or lend to  
-- **Save/Exit Options**: Save progress or exit without changes  
 - **RESET**: Wipe all data and exit (use carefully)  
 
 ---
 
 ## 🚀 Planned Features
 
-- GUI using **[your choice: Qt / ImGui / SDL / etc.]**
-- Data visualization (graphs, pie charts)
-- Encrypted data storage
+- GUI using **ImGui**
 - Multi-user support
-- Cross-platform packaging
+- Cross-platform Deployment
 
 ---
 
@@ -76,7 +73,7 @@ Choose:
 ## ⚠️ Disclaimer
 
 This project is **not ready for production use**.  
-Data is stored in plaintext, and there is no encryption or backup system yet.  
+There is no backup system yet.  
 Use at your own risk during beta.
 
 ---
@@ -96,11 +93,8 @@ The goal is to evolve this into a powerful yet lightweight personal finance appl
 
 ## 📅 Roadmap
 
-- [ ] Modularize code
 - [ ] Add config/settings file
-- [ ] Integrate file encryption
 - [ ] GUI implementation
-- [ ] Add unit testing
 
 ---
 
