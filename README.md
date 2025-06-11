@@ -50,9 +50,13 @@ Choose:
 
 ## 🛠️ How to Run (Beta)
 
+### Option 1: Use Visual Studio (recommended)
+
+### Option 2: Use g++
+
 1. Clone the repo:
    ```bash
-   git clone https://github.com/yourusername/money-tracker.git
+   git clone https://github.com/almohtadyg1/money-tracker.git
    cd money-tracker
    ```
 
