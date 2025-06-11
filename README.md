@@ -77,7 +77,6 @@ Choose:
 ## ⚠️ Disclaimer
 
 This project is **not ready for production use**.  
-There is no backup system yet.  
 Use at your own risk during beta.
 
 ---
