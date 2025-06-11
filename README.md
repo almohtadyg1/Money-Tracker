@@ -66,7 +66,7 @@ Choose:
    ./money_tracker
    ```
 
-> 💡 Requires a C++17+ compatible compiler
+> 💡 Requires a C++20 compatible compiler
 
 ---
 
